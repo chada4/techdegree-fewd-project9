@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chad Asercion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar">
-    >
     
+    <!-- header/navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">Chad Asercion</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,104 +27,313 @@
           </div>
         </div>
     </nav>
+    <!-- /header/navbar -->
 
-    <div id="about" class="container-fluid">
-        <div class="row">
-            <div class="col">
+    <!-- about me -->
+    <div id="about" class="container p-3">
+        <div class="row text-center">
+            <div class="col-sm">
                 <h2>About Me</h2>
                 <p>Some hopefully interesting things about me...</p>
             </div>
-            <div class="col">
-                <img src="../techdegree-fewd-project9/images/rsz_1profilepic.jpg" class="img-fluid img-thumbnail rounded" alt="Photo of Chad">
+            <div class="col-sm">
+                <img src="../techdegree-fewd-project9/images/rsz_2profilepic.jpg" class="img-fluid img-thumbnail rounded profilePic" alt="Photo of Chad">
             </div>
         </div>
+        <hr>
     </div>
+    <!-- /about me -->
 
+    <!-- projects -->
     <div class="container">
         <div id="projects" class="row">
+            <h2 class="text-center">Projects</h2>
           <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card my-2" style="width: 18rem;">
                     <img src="../techdegree-fewd-project9/images/rsz_screenshot-project8.png" class="card-img-top" alt="Screenshot of project 8">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Employee Directory</h5>
+                        <p class="card-text">Use an API to create an employee directory.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project8Modal">
+                            More Details
+                        </button>
                     </div>
                 </div>
           </div>
           <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../techdegree-fewd-project9/images/rsz_screenshot-project8.png" class="card-img-top" alt="Screenshot of project 8">
+                    <div class="card my-2" style="width: 18rem;">
+                        <img src="../techdegree-fewd-project9/images/rsz_screenshot-project7.png" class="card-img-top" alt="Screenshot of project 7">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">WebApp Dashboard</h5>
+                            <p class="card-text">Build an interactive dashboard for a web application using SVG graphics and JavaScript.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project7Modal">
+                                More Details
+                            </button>
                         </div>
                     </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../techdegree-fewd-project9/images/rsz_screenshot-project8.png" class="card-img-top" alt="Screenshot of project 8">
+                <div class="card my-2" style="width: 18rem;">
+                    <img src="../techdegree-fewd-project9/images/rsz_screenshot-project6.png" class="card-img-top" alt="Screenshot of project 6">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Game Show App</h5>
+                        <p class="card-text">Create a browser version of a word guessing game. Use Javascript to come up with a random phrases.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project6Modal">
+                            More Details
+                        </button>
                     </div>
                 </div>
           </div>
           <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../techdegree-fewd-project9/images/rsz_screenshot-project8.png" class="card-img-top" alt="Screenshot of project 8">
+                    <div class="card my-2" style="width: 18rem;">
+                        <img src="../techdegree-fewd-project9/images/rsz_screenshot-project5.png" class="card-img-top" alt="Screenshot of project 5">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Interactive Photo Gallery</h5>
+                            <p class="card-text">Use HTML, CSS, and JavaScript to create an interactive, searchable gallery of photos.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project5Modal">
+                                More Details
+                            </button>
                         </div>
                     </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../techdegree-fewd-project9/images/rsz_screenshot-project8.png" class="card-img-top" alt="Screenshot of project 8">
+                <div class="card my-2" style="width: 18rem;">
+                    <img src="../techdegree-fewd-project9/images/rsz_screenshot-project4.png" class="card-img-top" alt="Screenshot of project 4">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Web Style Guide</h5>
+                        <p class="card-text">Create a style guide using SASS to make styling web pages with CSS easier and faster.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                            More Details
+                        </button>
                     </div>
                 </div>
           </div>
           <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../techdegree-fewd-project9/images/rsz_screenshot-project8.png" class="card-img-top" alt="Screenshot of project 8">
+                    <div class="card my-2" style="width: 18rem;">
+                        <img src="../techdegree-fewd-project9/images/rsz_screenshot-project3.png" class="card-img-top" alt="Screenshot of project 3">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Online Registration Form</h5>
+                            <p class="card-text">Build a responsive, mobile-first registration form using a variety of HTML form elements.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                                More Details
+                            </button>
                         </div>
                     </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../techdegree-fewd-project9/images/rsz_screenshot-project8.png" class="card-img-top" alt="Screenshot of project 8">
+                <div class="card my-2" style="width: 18rem;">
+                    <img src="../techdegree-fewd-project9/images/rsz_screenshot-project2.png" class="card-img-top" alt="Screenshot of project 2">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Mobile-first Responsive Layout</h5>
+                        <p class="card-text">Using HTML, CSS, and responsive design, create a mobile-first web page.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                            More Details
+                        </button>
                     </div>
                 </div>
           </div>
           <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../techdegree-fewd-project9/images/rsz_screenshot-project8.png" class="card-img-top" alt="Screenshot of project 8">
+                    <div class="card my-2" style="width: 18rem;">
+                        <img src="../techdegree-fewd-project9/images/rsz_screenshot-project1.png" class="card-img-top" alt="Screenshot of project 1">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Personal Profile Page</h5>
+                            <p class="card-text">Customize a personal online profile web page using HTML and CSS.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                                More Details
+                            </button>
                         </div>
                     </div>
+            </div>
+            <hr>
+        </div>
+        <!-- /projects -->
+
+        <!-- contact -->
+        <div id="contact" class="row p-2 text-center">
+            <div class="col">
+                <p>Find me through:</p>
+            </div>
+            <div class="col">
+                <a href="mailto:chad.asercion@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.linkedin.com/in/chad-asercion-19805971/" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://github.com/chada4" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="col">
+                <p>&#169; Chad Asercion 2021</p>
             </div>
         </div>
+        <!-- /contact -->
+    </div>
+    <!-- /container -->
 
-        <div id="contact" class="row">
-            <div class="col">
-              Email
+    <!------------------------------------------------------
+        Modals
+    ------------------------------------------------------->
+
+    <!-- Modal -->
+    <div class="modal fade" id="project8Modal" tabindex="-1" aria-labelledby="project8ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="project8ModalLabel">Employee Directory</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="col">
-              LinkedIn
+            <div class="modal-body">
+            <p>Using JavaScript, create an employee directory by communicating with a third-party API (Application Programming Interface).</p>
             </div>
-            <div class="col">
-              GitHub
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Project</button>
             </div>
-            <div class="col">
-                Treehouse
+        </div>
+        </div>
+    </div> <!-- /modal -->
+    <div class="modal fade" id="project7Modal" tabindex="-1" aria-labelledby="project7ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="project7ModalLabel">WebApp Dashboard</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+            <p>Build an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. The project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project6Modal" tabindex="-1" aria-labelledby="project6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="project6ModalLabel">Game Show App</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Create a browser version of “Wheel of Success”, a word guessing game. Use Javascript to come up with a random phrase that players will try to guess by entering different letters into the program.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project5Modal" tabindex="-1" aria-labelledby="project5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="project5ModalLabel">Interactive Photo Gallery</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Create an interactive photo gallery using JavaScript and CSS Grid Layout. Thumbnails and photos will be provided with descriptions. At the top of the page, have a search area where photos will hide and show depending on user input. When the user clicks on a thumbnail, the photo will display in a lightbox.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="project4ModalLabel">Web Style Guide</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Convert the CSS into Sass by splitting the code into several Sass partial files. Look for repeated values throughout the CSS and store them in Sass variables.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="project3ModalLabel">Online Registration Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Build a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes. Using the supplied mockup files, build a mobile and desktop version of the form using media queries, and a "mobile-first" approach.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="project2ModalLabel">Mobile-first Responsive Layout</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Using HTML, CSS, and responsive design, create a mobile-first web page with a layout that adjusts to fit mobile phones, tablets, and desktop displays.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="project1ModalLabel">Personal Profile Page</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Customize a personal online profile by adding graphics, customizing text, and improving the look of a web page using Cascading Style Sheets, then share on GitHub.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+        </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>
